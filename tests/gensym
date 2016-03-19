@@ -1,0 +1,7 @@
+# https://github.com/pjcj/Devel--Cover/issues/125
+# fails with DEVEL_COVER_SELF=1 in B::walksymtable
+
+for ( 1 .. 3 ) {
+    my $t_fh;
+    open( ${ \$t_fh }, '>', '/dev/null' );
+}
